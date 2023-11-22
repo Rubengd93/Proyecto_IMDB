@@ -37,9 +37,7 @@ export class Movie {
 
     public toStringMovie():string {
 
-        let actors = this.actors.map(array => {
-            return array;
-        });
+        let actors = this.actors.map((actor) => actor.name);
 
         let atributeFilm = `
         Title - ${this.title}
@@ -55,7 +53,6 @@ export class Movie {
         Producer - ${this.producer}
         Distributor - ${this.distributor}
         Genre - ${this.genre}
- 
         `
         return atributeFilm;
     }
